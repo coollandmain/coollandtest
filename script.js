@@ -1,5 +1,4 @@
 function initializePage() {
-    function initializePage() {
     // Retrieve the current URL
     var currentUrl = window.location.href;
 
