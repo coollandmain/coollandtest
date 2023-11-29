@@ -6,6 +6,20 @@ body {
     padding: 0;
 }
 
+#settings-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    z-index: 2;
+    border-radius: 10px; /* Add smooth edges */
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+
 #button-home:hover,
 #button-events:hover {
     background-color: #555; /* Change the color to your desired hover color */
