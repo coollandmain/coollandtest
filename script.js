@@ -1,4 +1,17 @@
 function initializePage() {
+    function initializePage() {
+    // Retrieve the current URL
+    var currentUrl = window.location.href;
+
+    // Check if the user is on the beta version page
+    if (currentUrl.includes('coollandtest')) {
+        // Set the checkbox as checked
+        var betaCheckbox = document.getElementById('beta-checkbox');
+        if (betaCheckbox) {
+            betaCheckbox.checked = true;
+        }
+    }
+
     document.getElementById('home').style.display = 'block';
     document.getElementById('coolland-events').style.display = 'none';
 }
