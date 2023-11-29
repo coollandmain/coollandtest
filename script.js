@@ -1,16 +1,4 @@
 function initializePage() {
-    // Retrieve the current URL
-    var currentUrl = window.location.href;
-
-    // Check if the user is on the beta version page
-    if (currentUrl.includes('coollandtest')) {
-        // Set the checkbox as checked
-        var betaCheckbox = document.getElementById('beta-checkbox');
-        if (betaCheckbox) {
-            betaCheckbox.checked = true;
-        }
-    }
-
     document.getElementById('home').style.display = 'block';
     document.getElementById('coolland-events').style.display = 'none';
 }
@@ -38,14 +26,9 @@ function changeTheme() {
     // Save the theme preference to localStorage
     localStorage.setItem('theme', theme);
     
+    // Check if the beta version checkbox is checked
     var betaCheckbox = document.getElementById('beta-checkbox');
-    
-    // Redirect to coollandmain.github.io if the checkbox is unchecked
-    if (betaCheckbox && !betaCheckbox.checked) {
-        window.location.href = 'https://coollandmain.github.io/';
-    }
-    // Redirect to the beta version if the checkbox is checked
-    else if (betaCheckbox && betaCheckbox.checked) {
+    if (betaCheckbox && betaCheckbox.checked) {
         window.location.href = 'https://coollandmain.github.io/coollandtest/';
     }
 }
