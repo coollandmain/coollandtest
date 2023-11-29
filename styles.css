@@ -6,20 +6,6 @@ body {
     padding: 0;
 }
 
-#settings-popup {
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    left: 10px;
-    background-color: #333;
-    padding: 10px;
-    color: white;
-    z-index: 2;
-    border-radius: 10px; /* Add smooth edges */
-    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
-}
-
-
 #button-home:hover,
 #button-events:hover {
     background-color: #555; /* Change the color to your desired hover color */
@@ -48,7 +34,10 @@ body {
     border-radius: 15px;
     display: inline-block;
 }
-
+.lime-background:hover{
+    background-color: #555; /* Change the color to your desired hover color */
+    cursor: pointer;
+}
 #menu {
     position: fixed;
     top: 0;
@@ -77,18 +66,6 @@ body {
     display: none;
 }
 
-.lime-background {
-    align-items: end;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #208b25;
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    display: inline-block;
-}
-
 #settings-icon {
     position: fixed;
     bottom: 10px;
@@ -107,6 +84,8 @@ body {
     padding: 10px;
     color: white;
     z-index: 2;
+    border-radius: 10px; /* Add smooth edges */
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
 }
 
 #content {
