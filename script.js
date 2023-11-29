@@ -26,8 +26,14 @@ function changeTheme() {
     // Save the theme preference to localStorage
     localStorage.setItem('theme', theme);
     
-    // Check if the beta version setting is selected
-    if (document.getElementById('beta-checkbox').checked) {
+    var betaCheckbox = document.getElementById('beta-checkbox');
+    
+    // Redirect to coollandmain.github.io if the checkbox is unchecked
+    if (betaCheckbox && !betaCheckbox.checked) {
+        window.location.href = 'https://coollandmain.github.io/';
+    }
+    // Redirect to the beta version if the checkbox is checked
+    else if (betaCheckbox && betaCheckbox.checked) {
         window.location.href = 'https://coollandmain.github.io/coollandtest/';
     }
 }
