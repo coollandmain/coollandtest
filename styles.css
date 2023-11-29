@@ -82,7 +82,7 @@ body {
     left: 10px;
     background-color: #f0f0f0; /* Light gray color */
     padding: 10px;
-    color: white;
+    color: black;
     z-index: 2;
     border-radius: 10px; /* Add smooth edges */
 }
