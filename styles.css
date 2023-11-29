@@ -80,12 +80,11 @@ body {
     position: fixed;
     bottom: 50px;
     left: 10px;
-   background-color: #f0f0f0; /* Light gray color */
+    background-color: #f0f0f0; /* Light gray color */
     padding: 10px;
     color: white;
     z-index: 2;
     border-radius: 10px; /* Add smooth edges */
-    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
 }
 
 #content {
