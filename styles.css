@@ -80,7 +80,7 @@ body {
     position: fixed;
     bottom: 50px;
     left: 10px;
-    background-color: #333;
+   background-color: #f0f0f0; /* Light gray color */
     padding: 10px;
     color: white;
     z-index: 2;
