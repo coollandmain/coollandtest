@@ -26,11 +26,6 @@ function changeTheme() {
     // Save the theme preference to localStorage
     localStorage.setItem('theme', theme);
     
-    // Check if the beta version checkbox is checked
-    var betaCheckbox = document.getElementById('beta-checkbox');
-    if (betaCheckbox && betaCheckbox.checked) {
-        window.location.href = 'https://coollandmain.github.io/coollandtest/';
-    }
 }
 
 // Check if a theme preference is saved in localStorage
