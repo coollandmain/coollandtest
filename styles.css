@@ -7,7 +7,7 @@ body {
 }
 
 #button-home:hover,
-#buttom-smp:hover
+#buttom-smp:hover,
 #button-events:hover {
     background-color: #555; /* Change the color to your desired hover color */
     cursor: pointer;
@@ -19,7 +19,7 @@ body {
     padding: 10px;
 }
 #button-home,
-#buttom-smp
+#buttom-smp,
 #button-events {
     margin-left: -30px; /* Move the buttons 30 pixels to the left */
     background-color: #42413e;
