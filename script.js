@@ -29,7 +29,7 @@ function hideMenu(content) {
 
 function showMenu(content) {
     document.getElementById('menu').classList.remove('transformed');
-    content.style.marginRight = '200px';
+    content.style.marginLeft = '115px';
     content.classList.remove('content-transformed');
 }
 function initializePage() {
