@@ -23,13 +23,11 @@ document.addEventListener('touchend', function () {
 
 function hideMenu(content) {
     document.getElementById('menu').classList.add('transformed');
-    content.style.marginRight = '0px';
     content.classList.add('content-transformed');
 }
 
 function showMenu(content) {
     document.getElementById('menu').classList.remove('transformed');
-    content.style.marginRight = '115px';
     content.classList.remove('content-transformed');
 }
 function initializePage() {
