@@ -23,25 +23,18 @@ document.addEventListener('touchend', function () {
 
 function hideMenu(content) {
     document.getElementById('menu').classList.add('transformed');
-    content.style.marginLeft = '0px';
+    content.style.marginRight = '0px';
     content.classList.add('content-transformed');
 }
 
 function showMenu(content) {
     document.getElementById('menu').classList.remove('transformed');
-    content.style.marginLeft = '115px';
+    content.style.marginRight = '115px';
     content.classList.remove('content-transformed');
 }
 function initializePage() {
     document.getElementById('home').style.display = 'block';
     document.getElementById('coolland-events').style.display = 'none';
 }
-
-//phone
-document.getElementById('button-home').addEventListener('click', showHome);
-document.getElementById('button-events').addEventListener('click', showEvents);
-document.getElementById('button-home').addEventListener('touchend', showHome);
-document.getElementById('button-events').addEventListener('touchend', showEvents);
-
 window.onload = initializePage;
 
